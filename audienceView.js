@@ -70,7 +70,7 @@ const audienceView = {
             //delete user
             // debugger
             this.setState({loading:true})
-            let _url = admin_dashboard.servername + "adminbot/getfanpageusers/";
+            let _url = admin_dashboard.servername + "adminbot/removeuser/";
             audienceView.fetchPost(_url, {fanpage: admin_dashboard.fanpage, fbid: user._id}, (res) =>{
                 //get users after deletion
                 this.getAudience(()=>{
